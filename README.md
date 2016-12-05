@@ -4,11 +4,11 @@ Here I have set up four example models.
 ###Example 1: 8schools
 8schools is a simple example taken directly from the stan repository. In total the model estimates 10 parameters.
 
-###Example 2: recuits 
+###Example 2: recruits 
 recruits is a simple count model that also extracts for categorical generated quantity parameters. In total the model estimates 5 parameters + 32 plot random effects.
 
 ###Example 3: shrub density
-density is another count model but with many more parameters & random effects. In total this model has 209 parameters (200 of which are random effect parameters). This model also contains range of generated quantities
+shrub density is another count model but with many more parameters & random effects. In total this model has 209 parameters (200 of which are random effect parameters). This model also contains range of generated quantities
 
 ###Example 4: shrub density minus generated quantities.
 is the same as example 3 except with no generated quantities.
