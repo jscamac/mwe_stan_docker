@@ -86,4 +86,4 @@ These models can also be run locally on your machine by doing the following:
 1) Open a terminal and move to a directory you want the repository to be stored then run:
 ```git clone git@github.com:jscamac/mwe_stan_docker.git```
 
-2) Open an R session within that repository and run the above code (assuming 'rstan is installed').
+2) Open an R session within that repository and run the models using the examples above (assuming 'rstan is installed').
