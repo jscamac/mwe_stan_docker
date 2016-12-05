@@ -18,12 +18,12 @@ First, if you haven't already done so, install [docker](https://www.docker.com).
 
 Next open a terminal and run the following:
 
-`sudo docker pull jscamac/mwe_stan_docker`
+```sudo docker pull jscamac/mwe_stan_docker```
 The above will download the prebuild image of a virtual machine that contains linux, R and `rstan`.
 
 Next run the docker image by running:
-`docker run -it jscamac/mwe_stan_docker`
-This should run a docker container using th image jscamac/mwe_stan_docker`. It should automatically open an `R` session:
+```docker run -it jscamac/mwe_stan_docker```
+This should run a docker container using th image `jscamac/mwe_stan_docker`. It should automatically open an `R` session:
 
 From here the models can be run sequentially by running:
 
@@ -80,6 +80,6 @@ system.time(fit <-stan(file = 'density_no_genquants.stan', data = density_data,
 These models can also be run locally on your machine by doing the following:
 
 1) Open a terminal and move to a directory you want the repository to be stored then run:
-`git clone git@github.com:jscamac/mwe_stan_docker.git`
+```git clone git@github.com:jscamac/mwe_stan_docker.git```
 
 2) Open an R session within that repository and run the above code (assuming 'rstan is installed').
