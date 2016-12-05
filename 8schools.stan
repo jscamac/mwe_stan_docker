@@ -11,9 +11,9 @@ parameters {
 transformed parameters {
   real theta[J];
   for (j in 1:J)
-    theta[j] <- mu + tau * eta[j];
+    theta[j] = mu + tau * eta[j];
 }
 model {
-  eta ~ normal(0, 1);
-  y ~ normal(theta, sigma);
+  target += normal_lpdf(eta | 0, 1);
+  target += normal_lpdf(y | theta, sigma);
 }
