@@ -18,11 +18,15 @@ First, if you haven't already done so, install [docker](https://www.docker.com).
 
 Next open a terminal and run the following:
 
-```sudo docker pull jscamac/mwe_stan_docker```
+```
+sudo docker pull jscamac/mwe_stan_docker
+```
 The above will download the prebuild image of a virtual machine that contains linux, R and `rstan`.
 
 Next run the docker image by running:
-```docker run -it jscamac/mwe_stan_docker```
+```
+docker run -it jscamac/mwe_stan_docker
+```
 This should run a docker container using th image `jscamac/mwe_stan_docker`. It should automatically open an `R` session:
 
 From here the models can be run sequentially by running:
